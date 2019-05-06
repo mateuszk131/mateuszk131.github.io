@@ -1,0 +1,218 @@
+body {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(to left ,white,gray);
+	no-repeat background-image;
+ }
+
+html {
+	font-size: 17px;
+	overflow-x: hidden;
+	min-height: 100vh;
+
+}
+.home img {
+
+	margin-bottom:0px;
+	margin-left:10px;
+	margin-right:15px;
+	height:27px; 
+	transform:scale(2.7);
+}
+.nav-link dropdown-toggle{
+	transform:rotate(90deg);
+}
+.navbar {
+	z-index:100;
+background-color:black;
+	opacity: 0.8;
+    filter: alpha(opacity=50);
+width:10000px;
+    padding: 0;
+	margin:0px auto;
+    position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+	
+}
+
+.default{
+cursor: default; 
+}
+.navbar a {
+	font-size: 30px;
+
+	text-align: center;
+	padding: 26px 14px;
+	text-decoration: none;
+}
+.navbar a:hover {
+	transition-duration: 0.3s;
+	background-color: red;
+	
+}
+.centertext{
+	margin-top:0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border: 2px solid #000; 
+	border-radius: 15px; 
+	-moz-border-radius: 15px;
+}
+.content {
+	z-index:-1000;
+	position: relative;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 10px;
+	background-image: linear-gradient(gray,white);
+	border-radius:15px;
+	
+
+}
+
+.box {
+	margin-top:5px;
+		background-image: linear-gradient(white,gray);
+	z-index: 1;
+	position: relative;
+	width: 1100px;
+	height: 1598px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:10px;
+	-webkit-box-shadow: -20px 0px 23px 0px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow: -20px 0px 23px 0px rgba(50, 50, 50, 0.77);
+    box-shadow: -20px 0px 23px 0px rgba(50, 50, 50, 0.77);
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	text-align: center;
+	border-style: groove;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+.polecamy {	
+}
+.polecamy img {
+
+	height: 200px;
+	width: 220px;
+	padding: 5px;
+	border: 2px solid #000;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	text-align: center;
+}
+.kafelek {
+	float: left;
+	width: 300px;
+	height: 50px;
+	margin-left: 37.2%;
+	margin-top: 10px;
+	background-color: #121212;
+	border-radius: 10px;
+	color: white;
+	font-size: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.kot {
+	
+	z-index:0;
+	position: relative;
+
+
+	height: 500px;
+	margin-left: 14%;
+}
+.kot img {
+	margin-top: -100px;
+	width: auto;
+	height: 1000px;
+}
+div.polaroid {
+	width: 284px;
+	padding: 10px 0px 5px 0px;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+div.rotate_right {
+	float: left;
+	-ms-transform: rotate(7deg); /* IE 9 */
+	-webkit-transform: rotate(7deg); /* Safari */
+	transform: rotate(7deg);
+}
+
+div.rotate_left {
+	float: left;
+	-ms-transform: rotate(-8deg); /* IE 9 */
+	-webkit-transform: rotate(-8deg); /* Safari */
+	transform: rotate(-8deg);
+}
+div.polaroid1 {
+	width: 284px;
+	padding: 10px 0px 5px 0px;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+.polaroid1 img:hover {
+	filter: grayscale(0);
+}
+.gallery {
+	margin: 10px 10px;
+}
+.gallery img {
+	border-radius: 40px;
+	height: 130px;
+	width: 200px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+.gallery img:hover {
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+audio {
+	width: 700px; 
+}
+.fb {
+	float: left;
+	width: 148px;
+	height: 150px;
+	background-color: #3b5998;
+	margin-right: 4px;
+	border-radius: 20px;
+
+}
+.fb:hover {
+	background-color: #264483;
+	transition-duration: 0.3s;
+}
+
+
+

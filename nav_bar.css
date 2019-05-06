@@ -1,0 +1,118 @@
+body { margin: 0; padding: 0;  background: #eee; }
+
+/* Navigation Bar */
+
+.nav-bar {
+  background: linear-gradient(to bottom, #57b759, #007a00);  /* Green gradient - light to dark. */
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  text-align: left;  /* May want to align center */
+}
+.nav-menu a {
+  color: #fff;  /* White font for link color. */
+}
+.nav-menu,
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-menu li {
+  position: relative;
+}
+.nav-menu a {
+  padding: 5px 10px;
+  margin: 5px 10px;
+  display: block;
+  text-decoration: none;
+  border-radius: .2em;  /* Nice little rounded corners. */
+}
+.nav-menu a:hover {
+  opacity: 1.0;
+  background: rgba(0, 0, 0, 0.8);  /* Solid black rollover for all items. */
+}
+
+/* Selected Menu Item */
+
+.selected {
+  opacity: 1.0;
+  background: rgba(255, 255, 255, 0.5);  /* Transparent white selected item. */
+  color: #000 !important;                /* Black font. */
+  border-radius: .2em;
+}
+
+/* Navigation Bar - Level 1 Drop Down Menu */
+
+.nav-menu > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+}
+.nav-menu > li:first-child {
+  margin-left: 0;
+}
+.nav-menu > li > a {}
+.nav-menu > li > a:hover {}
+
+/* Navigation Bar - Level 2 */
+
+.nav-menu > li > ul {
+  text-align: left;
+  width: auto;  /* Change auto value with 200px if you want a bigger menu */
+  display: none;
+  background: #007a00;  /* Dark green. */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-bottom: 5px;
+  min-width: 150px;
+  border-radius: 0 0 .5em .5em;
+  z-index: 9999999;
+}
+.nav-menu > li:hover > ul {
+  display: block;
+}
+.nav-menu ul li a {}
+.nav-menu ul li a:hover {}
+
+/* Navigation Bar - Level 3 */
+
+.nav-menu > li > ul > li > ul {
+  text-align: left;
+  display: none;
+  background: #57b759;  /* Light green. */
+  position: absolute;
+  left: 100%;
+  top: 0;
+  padding-bottom: 5px;
+  min-width: 150px;
+  border-radius: 0 0 .5em .5em;
+  z-index: 9999999;
+}
+.nav-menu > li > ul > li:hover > ul {
+  display: block;
+}
+.nav-menu ul ul li {}
+.nav-menu ul ul li a {}
+.nav-menu ul ul li a:hover {}
+
+/* Navigation Bar - Level 4 */
+
+.nav-menu > li > ul > li > ul > li > ul {
+  text-align: left;
+  display: none;
+  background: #57b759;  /* Light green. */
+  position: absolute;
+  left: 100%;
+  top: 0;
+  padding-bottom: 5px;
+  min-width: 250px;
+  border-radius: 0 0 .5em .5em;
+  z-index: 9999999;
+}
+.nav-menu > li > ul > li > ul > li:hover > ul {
+  display: block;
+}
+.nav-menu ul ul ul li {}
+.nav-menu ul ul ul li a {}
+.nav-menu ul ul ul li a:hover {}
